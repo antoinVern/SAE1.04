@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon blog{% endblock %}
+
+
+{% block body %}
+<head>
+    {% block stylesheets %}
+    <link href="style.css" rel="stylesheet" />
+    {% endblock %}
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="/Images/dossier-portfolio.png" alt="Portfolio Image">
+                    <h3>Portfolio</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Un portfolio est une compilation organisée de travaux et d'expériences qui illustre les compétences et les réalisations d'une personne.</p>
+                    <a href="/Portfolio">Ouvrir</a>
+                </div>
+            </div>
+        </div>
+
+
+    
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="/Images/cv.png">
+                    <h3>CV</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Un CV est un résumé des études, de l'expérience professionnelle et des compétences d'une personne pour postuler à un emploi.</p>
+                    <a href="#" onclick="downloadFile('/Images/Antoine.pdf')">Ouvrir</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                    <h3>Motivation</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function downloadFile(fileName) {
+            // Create a temporary link element
+            var link = document.createElement('a');
+            link.href = fileName;
+            link.download = fileName;
+
+            // Append the link to the body
+            document.body.appendChild(link);
+
+            // Trigger the click event on the link
+            link.click();
+
+            // Remove the link from the body
+            document.body.removeChild(link);
+        }
+    </script>
+    </body>
+{% endblock %}
