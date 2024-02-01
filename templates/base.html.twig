@@ -29,42 +29,27 @@
 					<span class="tooltip">Home</span>
 				</li>
 				<li>
-					<a href="/CV">
+					<a href="/Documents">
 						<i class='bx bxs-file-doc'></i>
 						<span class="title">Documents</span>
 					</a>
 					<span class="tooltip">Documents</span>
 				</li>
 				<li>
-					<a href="#">
-						<i class='bx bxs-file-doc'></i>
+					<a href="/APropos">
+						<i class='bx bxs-user-pin'></i>
 						<span class="title">A propos de Moi</span>
 					</a>
 					<span class="tooltip">A propos de Moi</span>
 				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-wallet-alt"></i>
-						<span class="title">Wallet</span>
-					</a>
-					<span class="tooltip">Wallet</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bxs-devices"></i>
-						<span class="title">Devices</span>
-					</a>
-					<span class="tooltip">Devices</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-cog"></i>
-						<span class="title">Setting</span>
-					</a>
-					<span class="tooltip">Setting</span>
-				</li>
 			</ul>
 		</section>
+
+		<footer>
+        <div class="footer-content">
+            <p>&copy; {% block copyrightYear %}{{ "now"|date("Y") }}{% endblock %} Mon Blog, Antoine Vernay. Tous droits réservés.</p>
+        </div>
+		</footer>		
 
 		<script>
 			const btn_menu = document.querySelector(".btn-menu");

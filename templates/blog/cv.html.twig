@@ -1,0 +1,187 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon blog{% endblock %}
+
+{% block body %}
+<head>
+    {% block stylesheets %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet" />
+    <title>Resume</title>
+    {% endblock %}
+</head>
+<body>
+    <section class="main-section">
+        <div class="left-part">
+            <div class="photo-container">
+                <img src="Images/user.jpeg" alt="">
+            </div>
+            <div class="contact-container">
+                <h2 class="titre">Contacter Moi</h2>
+                <div class="contact-list">
+                    <div class="icon-container">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p>15bis Rue Fontenille, Roanne </p>
+                    </div>
+                </div>
+                <div class="contact-list">
+                    <div class="icon-container">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p>antoine.vernay@etu.univ-st-etienne.fr</p>
+                    </div>
+                </div>
+                <div class="contact-list">
+                    <div class="icon-container">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <div class="contact-text">
+                        <p>@antoinVern</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-container">
+                <h2 class="titre">Formation</h2>
+                <div class="course">
+                    <h2 class="education-title">Etudes Supérieures</h2>
+                    <h5 class="college-name">UT Roanne - Réseaux télécommunication </h5>
+                    <p class="education-date">2023 - ????</p>
+                </div>
+                <div class="course">
+                    <h2 class="education-title">Lycée</h2>
+                    <h5 class="college-name">Lycée Beauregard, Montbrison</h5>
+                    <p class="education-date">2021 - 2023</p>
+                </div>
+                <div class="course">
+                    <h2 class="education-title">Collège</h2>
+                    <h5 class="college-name">Collège Leonard de Vinci, Saint-Romain-le-Puy  </h5>
+                    <p class="education-date">2017 - 2021</p>
+                </div>
+            </div>
+
+            <div class="skills-container">
+                <h2 class="titre">Compétences</h2>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>html</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>css</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>C</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Python</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Réseau</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="banner">
+                <h1 class="firstname">Antoine</h1>
+                <h1 class="lastname">Vernay</h1>
+                <p class="position">Etudiant</p>
+            </div>
+
+            <div class="work-container ">
+                <h2 class="titre text-left">Expériences</h2>
+                <div class="work">
+                    <div class="job-date">
+                        <p class="job">La Poste - Montbrison</p>
+                        <p class="date">Juillet 2023 - 1 Mois</p>
+                    </div>
+                    <h2 class="company-name">Facteur</h2>
+                    <p class="work-text">
+                        - Maîtrise des outils et équipements de la poste 
+                        <br>- Capacité à travailler efficacement avec les clients (respect des délais et des priorités)
+                    </p>
+                </div>
+
+                <div class="work">
+                    <div class="job-date">
+                        <p class="job">Mairie Sury le Comtal</p>
+                        <p class="date">Juillet 2022 - 1 semaine</p>
+                    </div>
+                    <h2 class="company-name">Employé municipal</h2>
+                    <p class="work-text">
+                        - Arrosage et désherbage 
+                        <br>- Nettoyage des routes avec souffleur
+                        <br>- Ratissage des stades
+                    </p>
+                </div>
+                <div class="work">
+                    <div class="job-date">
+                        <p class="job">Savoye - Saint-Etienne</p>
+                        <p class="date">2020 - 1 semaine</p>
+                    </div>
+                    <h2 class="company-name">Stage 3ème | Supply Chain</h2>
+                    <p class="work-text">
+                        - Premier pas dans une entreprise informatique 
+                        <br>- Intervention des différentes spécialités de l’entreprise 
+                        <br>- Apprentissage de ce qu'est une supply chain
+                    </p>
+                </div>
+            </div>
+            <h2 class="titre">telecharger</h2>
+            <form action="/telecharger" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required><br>
+
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" required><br>
+
+    <label for="email">E-mail :</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <button type="submit" class="btn btn-primary">
+        <a href="cv.pdf" download="cv.pdf" style="color: white; text-decoration: none;">Confirmer</a>
+    </button>
+</form>
+        </div>
+    </section>
+</body>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon blog{% endblock %}
+
+{% block body %}
+    <head>
+        {% block stylesheets %}
+            <link href="style.css" rel="stylesheet" />
+        {% endblock %}
+    </head>
+
+    <body>
+        <div class="about-container">
+            <div class="space"></div>
+
+            <h2>À Propos de Moi</h2>
+
+            <div class="personal-info">
+                <p></p>
+                <br>
+                <p></p>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="hobbies">
+                <h2>Mes voyages</h2>
+                <div class="image-gallery">
+                    <div class="image-description">
+                        <div class="image-container">
+                            <img src="Images/IMG_4733.jpg" alt="Dubai" />
+                        </div>
+                    </div>
+
+                    <div class="image-description">
+                        <div class="image-container">
+                            <img src="Images/IMG_3390.jpg" alt="Copenhague" />
+                        </div>
+                        <div class="text-container">
+                            <p></p>
+                        </div>
+                    </div>
+                    <h4>Voici mes deux destinations préférées</h4>
+                    <br>Copenhague et Dubai, deux destinations, deux mondes. L'une, avec ses canaux tranquilles et ses ruelles colorées, respire la détente. L'autre, une métropole futuriste éblouissante au cœur du désert. Ces images révèlent ma passion pour l'inconnu, pour la découverte sans fin au-delà des horizons.
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <h2>Mes Passions</h2>
+            <div class="image-gallery">
+                <div class="image-description">
+                    <div class="image-container">
+                        <img src="Images/da141f27-5673-43d4-af6c-647ae4a2aaa8.jpg" alt="Foot" />
+                    </div>
+                </div>
+
+                <div class="image-description">
+                    <div class="image-container">
+                        <img src="Images/asse.jpg" alt="Copenhague" />
+                    </div>
+                    <div class="text-container">
+                        <p></p>
+                    </div>
+                </div>
+                <h4>Voici mes deux passions préférées</h4>
+                <br>Encourager St-Étienne, c'est ma passion absolue, un feu qui brûle à chaque match. En parallèle, je suis sur le terrain, joueur fier de l'équipe de ma ville. Supporter les Verts et chausser les crampons, deux facettes d'une même passion pour le football. ⚽💚 
+                <div class="space"></div>
+            </div>
+            <div class="space"></div>
+        </div>
+    </body>
+{% endblock %}

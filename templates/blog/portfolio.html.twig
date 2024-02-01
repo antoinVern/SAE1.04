@@ -3,13 +3,78 @@
 {% block title %}Mon blog{% endblock %}
 
 {% block body %}
-<head>
-    {% block stylesheets %}
-    <link href="style.css" rel="stylesheet" />
-    {% endblock %}
-</head>
+    <head>
+        {% block stylesheets %}
+            <link href="style.css" rel="stylesheet" />
+        {% endblock %}
+    </head>
 
-<body>
+    <body>
+        <div class="about-container">
+            <div class="space"></div>
 
-</body>
+            <h2>Portfolio</h2>
+
+            <div class="space"></div>
+
+            <div class="personal-info">
+                <p>Découvrez mon ePortfolio, une vitrine numérique qui réunit mon parcours académique, mes compétences variées, mes réalisations et mes ambitions professionnelles. Bienvenue dans mon univers professionnel et académique captivant.</p>
+                <br>
+            </div>
+
+            <div class="hobbies">
+                <h3>Mes Diplômes et Certificats</h3>
+                <ul>
+                    <li>Diplôme : Baccalauréat Technologique | Mention Assez Bien</li>
+                    <li>Diplôme : Brevet des collèges | Mention Bien</li>
+                    <li>Certificat : MOOC | Certificat de réussite</li>
+                </ul>
+                <div class="space"></div>
+                <div class="image-container">
+                    <img src="Images/certifMOOC.jpeg" alt="MOOC" />
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="compet">
+                <table class="table-style">
+                    <thead>
+                        <tr>
+                            <th>Compétences</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h3>Architecture Réseau </h3> Capacité à concevoir des architectures réseau robustes et évolutives en tenant compte des besoins actuels et futurs.</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Compétences en Programmation</h3>  Comprendre et savoir utiliser plusieurs langages de programmation.</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Travail d'Équipe</h3>  Collaboration efficace avec des membres d'une équipe pour atteindre des objectifs communs.</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Analyse des Données</h3> Compétences de base en analyse de données pour interpréter des informations pertinentes pour la prise de décision.</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+
+            <div class="space"></div>
+
+            <div class="hobbies">
+                <h3>Mes Ambitions professionnelles</h3>
+                <p>Je ne suis pas certain de la carrière spécifique vers laquelle je devrais m'orienter, mais je suis convaincu que je souhaite travailler dans le domaine de la cybersécurité.</p>
+                <h4>Voici quelques-unes des carrières que je pourrais envisager :</h4>
+                <ul>
+                    <li>Ingénieur en cybersécurité</li>
+                    <li>Analyste de la sécurité de l'information</li>
+                    <li>Ethicien en Sécurité Informatique</li>
+                    <li>Expert en Détection d'Intrusion</li>
+                </ul>
+            </div>
+            <div class="space"></div>
+        </div>
+    </body>
 {% endblock %}

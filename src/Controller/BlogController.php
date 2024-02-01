@@ -16,8 +16,8 @@ class BlogController extends AbstractController
         ]);
     }
 
-    #[Route('/CV', name: 'Documents')]
-    public function CV(): Response
+    #[Route('/Documents', name: 'Documents')]
+    public function Documents(): Response
     {
         return $this->render('blog/document.html.twig', [
             'controller_name' => 'BlogController',
@@ -28,6 +28,20 @@ class BlogController extends AbstractController
     public function Portfolio(): Response
     {
         return $this->render('blog/portfolio.html.twig', [
+            'controller_name' => 'BlogController',
+        ]);
+    }
+    #[Route('/CV', name: 'CV')]
+    public function CV(): Response
+    {
+        return $this->render('blog/cv.html.twig', [
+            'controller_name' => 'BlogController',
+        ]);
+    }
+    #[Route('/APropos', name: 'APropos')]
+    public function APropos(): Response
+    {
+        return $this->render('blog/APropos.html.twig', [
             'controller_name' => 'BlogController',
         ]);
     }
